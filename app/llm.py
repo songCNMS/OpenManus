@@ -4,6 +4,7 @@ from openai import (
     APIError,
     AsyncAzureOpenAI,
     AsyncOpenAI,
+    AsyncAzureOpenAI,
     AuthenticationError,
     OpenAIError,
     RateLimitError,
