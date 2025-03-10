@@ -43,8 +43,9 @@ class LLM:
             self.base_url = llm_config.base_url
             if self.api_type == "azure":
                 self.client = AsyncAzureOpenAI(
-                    base_url=self.base_url,
+                    # base_url=self.base_url,
                     api_key=self.api_key,
+                    azure_endpoint=llm_config.base_url,
                     api_version=self.api_version,
                 )
             else:
